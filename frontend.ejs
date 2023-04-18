@@ -1,0 +1,31 @@
+
+ <html lang="en">
+ <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Database</title>
+ </head>
+ <body>
+        <% if(studentdetails.length>0){ %>
+        <% for(var i=0;i<studentdetails.length;i++){ %>
+                 <h3>FirstName- <%- studentdetails[i].fname%></h3>
+                 <h3>LastName- <%-studentdetails[i].lname%></h3>
+                 <h3>Email- <%-studentdetails[i].mail_id%></h3>
+                 <h3>Phone Number- <%- studentdetails[i].ph_num%></h3>
+                 <h3>Date-of-birth- <%- studentdetails[i].dob%></h3>
+                 <h3>Gender- <%- studentdetails[i].gender%></h3>
+                 <h3>Address Line 1- <%- studentdetails[i].Add_li1%></h3>
+                 <h3>Address Line 2- <%- studentdetails[i].Add_li2%></h3>
+                 <h3>City- <%- studentdetails[i].City%></h3>
+                 <h3>Country- <%- studentdetails[i].country%></h3>
+                 <h3>State- <%- studentdetails[i].state%></h3>
+                 <h3>Zipcode- <%- studentdetails[i].zip%></h3>
+                 <hr>
+        <% }%>
+        <%}else{%>
+         <h3>Student Details not found</h3>
+        <%} %>
+         
+ </body>
+ </html>
